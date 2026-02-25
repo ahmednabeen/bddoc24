@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 
-:root {
-    --bg: #ffffff;
-    --fg: #0f2922;
-    --muted: #161616;
-    --accent: #e8a849;
-    --bccent: #135c75;
-    --card: #ffffff;
-    --border: #d4e0db;
-    --gradient-start: #eff6ff; 
-    --gradient-end: #dbeafe;
+    :root {
+      --bg: #ffffff;
+      --fg: #0f2922; 
+      --muted: #4b5563;     
+      --accent: #e8a849;         
+      --accent-strong: #1C398E; 
+      --bccent: #135c75;  
+      --card: #ffffff;
+      --border: #cbd5e1; 
+      --gradient-start: #eff6ff;
+      --gradient-end: #dbeafe;
     }
 
     .dark {
