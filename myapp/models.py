@@ -52,6 +52,8 @@ class Doctor(models.Model):
     hospital = models.ForeignKey(Hospital, on_delete=models.SET_NULL, null=True, blank=True)
     slug = models.SlugField(max_length=255, unique=True, blank=True, help_text="Unique URL-friendly identifier for the doctor.")
 
+    is_featured = models.BooleanField(default=False)  # ✅ Newly ADD THIS
+
 
     def __str__(self):
         return self.name

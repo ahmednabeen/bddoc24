@@ -11,26 +11,25 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <script>
   tailwind.config = {
-    darkMode: 'class',
-    theme: {
-      extend: {
-        fontFamily: {
-          display: ['Space Grotesk', 'sans-serif'],
-          body: ['DM Sans', 'sans-serif'],
-        },
-        colors: {
-          bg: 'var(--bg)',
-          fg: 'var(--fg)',
-          muted: 'var(--muted)',
-          accent: 'var(--accent)',              // gold (background use)
-          accentStrong: 'var(--accent-strong)', // darker gold (text/buttons)
-          bccent: 'var(--bccent)',
-          card: 'var(--card)',
-          border: 'var(--border)',
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            bg: 'var(--bg)',
+            fg: 'var(--fg)',
+            muted: 'var(--muted)',
+            accent: 'var(--accent)',
+            bccent: 'var(--bccent)',
+            card: 'var(--card)',
+            border: 'var(--border)',
+          }
         }
       }
     }
-  }
 </script>
 </head>
 <body class="min-h-screen">
@@ -64,7 +63,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
               </svg>
             </button>
-            <button class="hidden sm:flex px-4 py-2 bg-accent text-fg font-semibold rounded-lg hover:opacity-90 transition-opacity">
+            <button class="hidden sm:flex px-4 py-2 bg-bccent text-fg font-semibold rounded-lg hover:opacity-90 transition-opacity">
               List Your Practice
             </button>
             <!-- Mobile Menu -->
@@ -84,7 +83,7 @@
           <a href="#hospitals" class="block py-2 text-muted hover:text-fg transition-colors">Hospitals</a>
           <a href="#specialties" class="block py-2 text-muted hover:text-fg transition-colors">Specialties</a>
           <a href="#" class="block py-2 text-muted hover:text-fg transition-colors">About</a>
-          <button class="w-full px-4 py-2 bg-accent text-fg font-semibold rounded-lg hover:opacity-90 transition-opacity">
+          <button class="w-full px-4 py-2 bg-bccent text-fg font-semibold rounded-lg hover:opacity-90 transition-opacity">
             List Your Practice
           </button>
         </div>
@@ -159,7 +158,7 @@
     </div>
   </footer>
 
-  <script>
+ <script>
     // 1. Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -192,35 +191,33 @@
       }
     }
 
-    // 4. Specialty Filter (Simple Show/Hide)
+    // 4. Specialty Filter (Improved for Dynamic Classes)
     function filterDoctors(category) {
       const cards = document.querySelectorAll('.doctor-card');
       const tabs = document.querySelectorAll('.specialty-tab');
 
       // Update active tab styles
       tabs.forEach(tab => {
-        // Check if the tab text matches the category (or 'All')
-        const isAll = category === 'all' && tab.textContent.trim() === 'All';
-        const isMatch = tab.textContent.trim().toLowerCase() === category;
-        
-        if (isAll || isMatch) {
-           tab.classList.add('active');
-           tab.classList.remove('text-muted');
+        // The onclick attribute directly passes the category slug
+        if (tab.getAttribute('onclick') === `filterDoctors('${category}')`) {
+          tab.classList.add('active');
+          tab.classList.remove('text-muted');
         } else {
-           tab.classList.remove('active');
-           tab.classList.add('text-muted');
+          tab.classList.remove('active');
+          tab.classList.add('text-muted');
         }
       });
 
-      // Filter cards
+      // Filter cards by checking for the class name
       cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.classList.remove('hidden');
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block'; // Use style to show/hide
         } else {
-          card.classList.add('hidden');
+          card.style.display = 'none';
         }
       });
     }
+
 
     // 5. Scroll Reveal
     const observer = new IntersectionObserver((entries) => {
@@ -233,6 +230,7 @@
 
     document.querySelectorAll('.stagger-reveal').forEach(el => observer.observe(el));
   </script>
+
 </body>
 </html>
 

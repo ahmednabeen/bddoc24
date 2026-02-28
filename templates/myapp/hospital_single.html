@@ -1,298 +1,322 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <main>
-    <!-- Hero Section -->
-    <section class="relative h-[50vh] min-h-[400px] overflow-hidden">
-      <!-- Background Image -->
-      <img 
-        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=600&fit=crop" 
-        alt="Square Hospital" 
-        class="absolute inset-0 w-full h-full object-cover"
-      >
-      <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
-      
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-12">
-        <div class="max-w-3xl">
-          <!-- Badge -->
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium mb-4">
-            <span class="w-2 h-2 rounded-full bg-green-400"></span>
-            Open Now
-          </div>
-          
-          <h1 class="font-display font-bold text-4xl sm:text-5xl text-white leading-tight mb-4">
-            Square Hospital
-          </h1>
-          
-          <div class="flex flex-wrap items-center gap-4 text-white/90 text-sm sm:text-base">
-            <div class="flex items-center gap-1">
-              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <span class="font-semibold">4.8</span>
-              <span class="text-white/70">(1,189 reviews)</span>
+<main>
+  <!-- Hero Section -->
+  <section class="relative hero-gradient pt-16 pb-20 sm:pt-24 sm:pb-28 overflow-hidden">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-card rounded-3xl shadow-xl p-6 sm:p-10 border border-border">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+          <div class="lg:col-span-3">
+            <div class="rounded-2xl overflow-hidden border border-border shadow-md">
+              <img 
+                src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200&auto=format&fit=crop" 
+                alt="Apollo Hospitals Dhaka" 
+                class="w-full h-64 sm:h-80 lg:h-[26rem] object-cover"
+              >
             </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Panthapath, Dhaka</span>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h1 class="font-display font-bold text-3xl sm:text-4xl text-fg mb-4">
+              Apollo Hospitals Dhaka
+            </h1>
+            <p class="text-muted mb-6 leading-relaxed">
+              A leading multi-specialty tertiary care hospital delivering international-standard healthcare with advanced technology and expert professionals.
+            </p>
+
+            <div class="space-y-4 text-muted">
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-accentstrong" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span>Plot-81, Block-E, Bashundhara R/A, Dhaka-1229</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-accentstrong" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <span>10678 (Hotline) • 02-8431661-5</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mt-6">
+              <span class="bg-blue-100 text-accentstrong px-4 py-1.5 rounded-full text-sm font-medium">Multi-Specialty</span>
+              <span class="bg-blue-100 text-accentstrong px-4 py-1.5 rounded-full text-sm font-medium">Advanced Diagnostics</span>
+              <span class="bg-blue-100 text-accentstrong px-4 py-1.5 rounded-full text-sm font-medium">24/7 Emergency</span>
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+              
+              <a href="#" class="flex-1 border-2 border-border text-fg font-semibold py-3 px-6 rounded-xl text-center hover:border-accent hover:text-accent transition">
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Breadcrumb -->
-    <div class="bg-bg border-b border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-        <nav class="flex items-center space-x-2 text-sm text-muted">
-          <a href="#" class="hover:text-fg transition-colors">Home</a>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          <a href="#hospitals" class="hover:text-fg transition-colors">Hospitals</a>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          <span class="text-fg font-medium">Square Hospital</span>
-        </nav>
       </div>
     </div>
+  </section>
 
-    <!-- Main Content -->
-    <section class="py-12 bg-bg">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          <!-- Left Column (Main Info) -->
-          <div class="lg:col-span-2 space-y-8">
-            
-            <!-- Quick Actions (Mobile) -->
-            <div class="lg:hidden bg-card rounded-2xl border border-border p-4 flex gap-3">
-              <button class="flex-1 py-3 bg-accent text-fg font-semibold rounded-xl hover:opacity-90 transition-all">
-                Book Appointment
-              </button>
-              <button class="py-3 px-4 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent transition-all">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              </button>
-            </div>
+  <!-- Main Content -->
+  <section class="py-16 sm:py-20 bg-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-            <!-- About Section -->
-            <div class="bg-card rounded-2xl border border-border p-6 sm:p-8">
-              <h2 class="font-display font-bold text-2xl text-fg mb-4">About Square Hospital</h2>
-              <p class="text-muted leading-relaxed mb-4">
-                Square Hospital is one of the leading private hospitals in Bangladesh. Established with the vision to provide world-class healthcare services, it offers a comprehensive range of medical services including cardiology, neurology, orthopedics, and pediatrics.
-              </p>
-              <p class="text-muted leading-relaxed">
-                The hospital is equipped with state-of-the-art medical technology and staffed by a team of highly qualified doctors and nurses dedicated to patient care. It is renowned for its patient-centric approach and high standards of hygiene and safety.
-              </p>
-            </div>
+      <!-- Overview -->
+      <div class="bg-card rounded-2xl shadow-xl border border-border p-6 sm:p-10 card-hover">
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-fg mb-6">Overview</h2>
+        <p class="text-muted leading-relaxed mb-6">
+          Apollo Hospitals Dhaka is a prominent tertiary care facility offering comprehensive medical services with modern infrastructure and a patient-first approach. 
+          It combines advanced medical technology with experienced consultants to deliver high-quality, compassionate care across multiple specialties.
+        </p>
+        <h3 class="font-semibold text-xl text-fg mb-4">Key Highlights</h3>
+        <ul class="space-y-3 text-muted">
+          <li class="flex items-start"><i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>Committed to international quality standards</li>
+          <li class="flex items-start"><i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>Experienced team of consultants and support staff</li>
+          <li class="flex items-start"><i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>Focus on patient safety and positive outcomes</li>
+        </ul>
+      </div>
 
-            <!-- Facilities & Services -->
-            <div class="bg-card rounded-2xl border border-border p-6 sm:p-8">
-              <h2 class="font-display font-bold text-2xl text-fg mb-6">Facilities & Services</h2>
-              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">24/7 Emergency</span>
-                </div>
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">ICU/CCU</span>
-                </div>
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">Modular OT</span>
-                </div>
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">Pharmacy</span>
-                </div>
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">Diagnostic Lab</span>
-                </div>
-                <div class="flex items-center gap-2 text-fg">
-                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-sm">Ambulance</span>
-                </div>
-              </div>
-            </div>
+      <!-- Facilities -->
+      <div class="bg-card rounded-2xl shadow-xl border border-border p-6 sm:p-10 card-hover">
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-fg mb-6">Facilities</h2>
+        
+        <div class="mb-8">
+          <h3 class="font-semibold text-xl text-fg mb-4">Diagnosis Facility</h3>
+          <ul class="space-y-3 text-muted">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>
+              <span>State-of-the-art diagnostic & therapeutic technology</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>
+              <span>24/7 Emergency, ICU, CCU, NICU & Critical Care service</span>
+            </li>
+          </ul>
+        </div>
 
-            <!-- Doctors Section -->
-            <div>
-              <div class="flex items-center justify-between mb-6">
-                <h2 class="font-display font-bold text-2xl text-fg">Associated Doctors</h2>
-                <a href="#" class="text-accent hover:underline font-semibold text-sm">View All</a>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Doctor Card Mini 1 -->
-                <div class="bg-card rounded-2xl border border-border p-4 flex items-center gap-4 card-hover">
-                  <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face" class="w-16 h-16 rounded-xl object-cover flex-shrink-0" alt="Dr. Fatima Rahman">
-                  <div class="flex-1 min-w-0">
-                    <h3 class="font-semibold text-fg truncate">Dr. Fatima Rahman</h3>
-                    <p class="text-sm text-muted">Cardiology</p>
-                    <div class="flex items-center gap-1 mt-1">
-                      <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <span class="text-xs font-medium text-fg">4.9</span>
-                    </div>
-                  </div>
-                  <button class="px-3 py-2 text-xs border border-border rounded-lg hover:bg-blue-50 transition-colors font-semibold">View</button>
-                </div>
-
-                <!-- Doctor Card Mini 2 -->
-                <div class="bg-card rounded-2xl border border-border p-4 flex items-center gap-4 card-hover">
-                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face" class="w-16 h-16 rounded-xl object-cover flex-shrink-0" alt="Dr. Kamal Hossain">
-                  <div class="flex-1 min-w-0">
-                    <h3 class="font-semibold text-fg truncate">Dr. Kamal Hossain</h3>
-                    <p class="text-sm text-muted">Neurology</p>
-                    <div class="flex items-center gap-1 mt-1">
-                      <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      <span class="text-xs font-medium text-fg">4.8</span>
-                    </div>
-                  </div>
-                  <button class="px-3 py-2 text-xs border border-border rounded-lg hover:bg-blue-50 transition-colors font-semibold">View</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right Column (Sidebar) -->
-          <div class="space-y-6">
-            
-            <!-- Action Card (Desktop) -->
-            <div class="hidden lg:block bg-card rounded-2xl border border-border p-6">
-              <button class="w-full py-3 bg-accent text-fg font-semibold rounded-xl hover:opacity-90 transition-all mb-3 flex items-center justify-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Book Appointment
-              </button>
-              <button class="w-full py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all flex items-center justify-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                Call Hospital
-              </button>
-            </div>
-
-            <!-- Info Card -->
-            <div class="bg-card rounded-2xl border border-border p-6 space-y-4">
-              <h3 class="font-display font-bold text-lg text-fg">Contact Information</h3>
-              
-              <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                </div>
-                <div>
-                  <p class="text-sm font-semibold text-fg">Address</p>
-                  <p class="text-sm text-muted">18/1, West Panthapath, Dhaka 1205</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                </div>
-                <div>
-                  <p class="text-sm font-semibold text-fg">Phone</p>
-                  <p class="text-sm text-muted">+880 2-58155011</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <div>
-                  <p class="text-sm font-semibold text-fg">Working Hours</p>
-                  <p class="text-sm text-muted">24 Hours Open</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Map Placeholder -->
-            <div class="bg-card rounded-2xl border border-border overflow-hidden h-64">
-              <div class="w-full h-full bg-slate-200 flex items-center justify-center">
-                 <span class="text-muted text-sm">Map Location</span>
-                 <!-- Ideally an iframe would go here -->
-              </div>
-            </div>
-
-          </div>
+        <div>
+          <h3 class="font-semibold text-xl text-fg mb-4">Hospital Facility</h3>
+          <ul class="space-y-3 text-muted">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>
+              <span>Multi-disciplinary super-specialty departments</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-accent mr-3 mt-1 text-lg"></i>
+              <span>Patient-centric environment with international quality standards</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Reviews Section -->
-    <section class="py-16 sm:py-24 bg-card border-t border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-          <div>
-            <h2 class="font-display font-bold text-3xl sm:text-4xl text-fg mb-2">Patient Reviews</h2>
-            <p class="text-muted text-lg">What patients say about their experience</p>
+      <!-- Our Doctors - Now using your index.html style cards -->
+      <div class="bg-card rounded-2xl shadow-xl border border-border p-6 sm:p-10 card-hover">
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-fg mb-8">Our Doctors</h2>
+        
+        <div id="doctorGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Ahmed Hassan" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Ahmed Hassan</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Cardiologist</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">4.8</span>
+                    <span class="text-sm text-muted">(278 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
           </div>
+
+          <!-- Card 2 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Fatema Rahman" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Fatema Rahman</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Neurologist</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">5.0</span>
+                    <span class="text-sm text-muted">(412 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Kamal Hossain" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Kamal Hossain</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Orthopedic Surgeon</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">4.5</span>
+                    <span class="text-sm text-muted">(189 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Sabrina Akter" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Sabrina Akter</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Pediatrician</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">4.7</span>
+                    <span class="text-sm text-muted">(321 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Rahman Chowdhury" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Rahman Chowdhury</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Ophthalmologist</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">4.9</span>
+                    <span class="text-sm text-muted">(456 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="doctor-card stagger-reveal visible bg-card rounded-2xl overflow-hidden border border-border card-hover">
+            <div class="p-6">
+              <div class="flex gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop&crop=face" 
+                  alt="Dr. Nazmul Islam" 
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between gap-2">
+                    <h3 class="font-display font-semibold text-lg text-fg truncate">Dr. Nazmul Islam</h3>
+                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-green-500 mt-2"></span>
+                  </div>
+                  <p class="text-accentstrong font-medium text-sm">Gastroenterologist</p>
+                  <p class="text-muted text-sm mt-1 truncate">Apollo Hospitals Dhaka</p>
+                  <div class="flex items-center gap-1 mt-2">
+                    <svg class="w-4 h-4 rating-star" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-fg">4.6</span>
+                    <span class="text-sm text-muted">(198 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full mt-4 py-3 border-2 border-border bg-blue-100 text-fg font-bold rounded-xl hover:border-accent hover:text-accent transition-all active:scale-[0.98]">
+                View Detail
+              </button>
+            </div>
+          </div>
+
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <!-- Review Card 1 -->
-          <div class="bg-bg rounded-2xl border border-border p-6 card-hover">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">A</div>
-              <div>
-                <h4 class="font-semibold text-fg">Ahmed Hossain</h4>
-                <p class="text-xs text-muted">2 weeks ago</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-1 mb-3">
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <p class="text-muted text-sm leading-relaxed">
-              Excellent service and care. The staff was very professional and the doctors were attentive. The facilities are clean and modern.
-            </p>
-          </div>
-
-          <!-- Review Card 2 -->
-          <div class="bg-bg rounded-2xl border border-border p-6 card-hover">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">S</div>
-              <div>
-                <h4 class="font-semibold text-fg">Sabrina Yasmin</h4>
-                <p class="text-xs text-muted">1 month ago</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-1 mb-3">
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-muted" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <p class="text-muted text-sm leading-relaxed">
-              Good experience overall. Waiting time was a bit long but the doctor consultation was worth it. Affordable pricing compared to others.
-            </p>
-          </div>
-
-          <!-- Review Card 3 -->
-          <div class="bg-bg rounded-2xl border border-border p-6 card-hover">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">R</div>
-              <div>
-                <h4 class="font-semibold text-fg">Rafiq Islam</h4>
-                <p class="text-xs text-muted">3 weeks ago</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-1 mb-3">
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <p class="text-muted text-sm leading-relaxed">
-              Had my surgery here last month. The operation theater was very advanced and the nursing staff took great care of me during recovery.
-            </p>
-          </div>
-
+        <div class="text-center mt-10">
+          <button class="border-2 border-border text-fg font-semibold px-8 py-4 rounded-xl hover:border-accent hover:text-accent transition">
+            Load More Doctors
+          </button>
         </div>
       </div>
-    </section>
-  </main>
-{% endblock content %}
+
+    </div>
+  </section>
+
+</main>
+{% endblock %}
