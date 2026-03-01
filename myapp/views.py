@@ -2,13 +2,7 @@ from django.shortcuts import render
 from django.db.models import Count, Avg
 from .models import Doctor, Hospital, Specialty, Review
 
-
 # Create your views here.
-
-# def home(request):
-#     return render(request, 'myapp/index.html')
-
-
 
 def home(request):
     # --- Data for Hero Section ---
@@ -35,9 +29,7 @@ def home(request):
     # --- Data for Hospitals Section ---
     hospitals = Hospital.objects.all().order_by('-id')[:4]
 
-    # --- Data for Browse by Specialty Section (NEW) ---
-    # Fetch specialties and annotate each with the count of related doctors.
-    # We only show specialties that have at least one doctor.
+    # --- Data for Browse by Specialty Section  ---
     specialties_with_counts = Specialty.objects.annotate(
         doctor_count=Count('doctor')
     ).filter(doctor_count__gt=0).order_by('-doctor_count')[:8]
@@ -60,21 +52,24 @@ def home(request):
         # Hospitals context
         'hospitals': hospitals,
 
-        # Specialties context (NEW)
+        # Specialties context 
         'specialties_with_counts': specialties_with_counts,
     }
-    
     return render(request, 'myapp/index.html', context)
-
-
-
-
-
 
 
 
 def doctor_single(request):
     return render(request, 'myapp/doctors_single.html')
 
+def doctor_detail(request):
+    return render(request, 'myapp/doctors_detail.html')
+
 def hospital_single(request):
     return render(request, 'myapp/hospital_single.html')
+
+def hospital_detail(request):
+    return render(request, 'myapp/hospital_detail.html')
+
+def search(request):
+    return render(request, 'myapp/search_page.html')
